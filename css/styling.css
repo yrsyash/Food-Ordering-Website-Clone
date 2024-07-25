@@ -1,0 +1,217 @@
+
+/*CSS RESET*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/*Navigation Bar :logo and image*/
+
+#logo
+{
+margin: 0px 29px;
+}
+#logo img{
+    width: 80px;
+    height: 80px;
+
+}
+
+/*Navigation Bar :list items*/
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li
+{
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;    
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;    
+    background-color: white ;
+}
+
+/*Home Section*/
+#home
+{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 546px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before
+{
+    content: "";
+    background:url('../bck.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1
+{
+    color: white;
+    text-align: center;
+}
+#home p{
+color: white;
+text-align: center;
+}
+/* Services Section */
+.service-container
+{
+    margin : 100px 0px;
+
+}
+#services
+{
+    margin : 34px;
+    display: flex;
+
+}
+
+#services .box
+{
+    
+    margin : 3px 6px;
+    border-radius: 5px;
+}
+#services .box img{
+    height: 160px ;
+    display: block;
+    margin: auto;
+    
+}
+#services .box p
+{
+    
+    text-align: center;
+}
+/*Client section*/
+.client-container
+{
+    height: 344px ;
+    
+}
+.client-container::before
+{
+    content:"";
+    position: absolute;
+    background: url('../bck1.jpg') no-repeat center center/cover;
+    width:100%;
+    height: 40%;
+    z-index: -1;
+}
+.clients
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.clients .box
+{
+    margin:0px 40px ;
+}
+.clients img
+{
+    height: 129px;
+    
+}
+/* contact section */
+#contact
+{
+    position: relative;
+    
+}
+#contact::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact #contact-box
+{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+footer
+{
+    background-color: black;
+    color: white;
+    margin: 15px;
+}
+input{
+    display: flex;
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#suggestion
+{
+    height: 80px;
+    width: 100%;
+}
+/* Utility class */
+
+.primary
+{
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+}
+.secondary
+{
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn
+{
+    padding: 6px 20px ;
+border: 2px solid white;
+background-color: aquamarine;
+font-size: 1.5rem;
+margin: 17px ;
+border-radius: 10px;
+cursor: pointer;
+
+}
+.center
+{
+    text-align: center;
+}
+
+
+
